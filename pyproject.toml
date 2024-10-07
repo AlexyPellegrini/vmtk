@@ -1,0 +1,32 @@
+[build-system]
+requires = ["scikit-build-core", "vtk-sdk==9.3.20241005.dev0"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+build-dir = "wheelbuild"
+
+[tool.scikit-build.cmake]
+verbose = true
+args = ["-GNinja"]
+
+[tool.scikit-build.cmake.define]
+VMTK_USE_SUPERBUILD="OFF"
+USE_SYSTEM_VTK="ON"
+USE_SYSTEM_ITK="ON"
+VTK_VMTK_CONTRIB="OFF"
+VMTK_SCRIPTS_ENABLED="ON"
+PYPES_MODULE_INSTALL_LIB_DIR="vmtk"
+ITK_DIR="C:/dev/slicerlib/Slicer/wheelbuild/ITK-build"
+Python_ROOT_DIR="C:/Python310-x64"
+PYTHON_DEBUG_LIBRARY="C:/Python310-x64/libs/python310.lib"
+PYTHON_EXECUTABLE="C:/Python310-x64/python.exe"
+PYTHON_INCLUDE_DIR="C:/Python310-x64/libs/include"
+PYTHON_LIBRARY="C:/Python310-x64/libs/python310.lib"
+CMAKE_BUILD_TYPE="Release"
+VTK_VMTK_MODULE_INSTALL_LIB_DIR="vmtk"
+VMTK_SCRIPTS_INSTALL_LIB_DIR="vmtk"
+
+[project]
+name = "vmtk"
+version = "9.3.20241005.dev0"
+dependencies = ["vtk==9.3.20241005.dev0"]

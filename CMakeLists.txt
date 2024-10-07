@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12...3.29.1)
+cmake_minimum_required(VERSION 3.12)
 
 project(VMTK)
 
@@ -27,16 +27,16 @@ if(VMTK_WITH_LIBRARY_VERSION)
      )
 endif()
 
-find_package( Python3 COMPONENTS Interpreter )
+find_package( Python COMPONENTS Interpreter Development)
 if (NOT VMTK_PYTHON_VERSION)
-  set(VMTK_PYTHON_VERSION "python${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}" CACHE STRING "" FORCE)
+  set(VMTK_PYTHON_VERSION "python${Python_VERSION_MAJOR}.${Python_VERSION_MINOR}" CACHE STRING "" FORCE)
 endif ()
 mark_as_advanced(VMTK_PYTHON_VERSION)
 
 if (APPLE AND VMTK_BREW_PYTHON)
   if(VMTK_BREW_PYTHON)
     option(VMTK_BREW_PYTHON "Link against Homebrew Python" ON)
-    set(PYTHON_SHEBANG ${PYTHON_EXECUTABLE})
+    set(PYTHON_SHEBANG ${Python_EXECUTABLE})
   else()
     set(PYTHON_SHEBANG "/usr/bin/env python")
   endif()
