@@ -747,7 +747,7 @@ NLuint nlSolve_CNC() ;
 
 
 
-#ifdef WIN32
+#ifdef _WIN32
 #include <windows.h>
 #else
 #include <sys/types.h>
@@ -791,7 +791,7 @@ void nl_should_not_have_reached(const char* file, int line) {
 /************************************************************************************/
 /* Timing */
 
-#ifdef WIN32
+#ifdef _WIN32
 NLdouble nlCurrentTime() {
     return (NLdouble)GetTickCount() / 1000.0 ;
 }
