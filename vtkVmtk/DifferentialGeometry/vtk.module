@@ -1,0 +1,9 @@
+NAME
+  VMTK::DifferentialGeometry
+LIBRARY_NAME
+  vtkvmtkDifferentialGeometry
+DEPENDS
+  VMTK::ComputationalGeometry
+  VTK::FiltersVerdict
+DESCRIPTION
+  "vtkvmtkDifferentialGeometry"

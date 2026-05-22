@@ -1,0 +1,11 @@
+NAME
+  VMTK::Segmentation
+LIBRARY_NAME
+  vtkvmtkSegmentation
+DEPENDS
+  VMTK::DifferentialGeometry
+  VTK::CommonComputationalGeometry
+  VTK::ImagingGeneral
+  VTK::IOImage
+DESCRIPTION
+  "vtkvmtkSegmentation"

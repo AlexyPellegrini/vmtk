@@ -1,0 +1,9 @@
+NAME
+  VMTK::ComputationalGeometry
+LIBRARY_NAME
+  vtkvmtkComputationalGeometry
+DEPENDS
+  VMTK::Common
+  VTK::FiltersGeneral
+DESCRIPTION
+  "vtkvmtkComputationalGeometry"

@@ -1,0 +1,13 @@
+NAME
+  VMTK::Misc
+LIBRARY_NAME
+  vtkvmtkMisc
+DEPENDS
+  VMTK::ComputationalGeometry
+  VMTK::DifferentialGeometry
+  VTK::FiltersFlowPaths
+  VTK::FiltersGeometry
+  VTK::FiltersModeling
+  VTK::ImagingCore
+DESCRIPTION
+  "vtkvmtkMisc"

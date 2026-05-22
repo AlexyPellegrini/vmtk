@@ -1,0 +1,12 @@
+NAME
+  VMTK::IO
+LIBRARY_NAME
+  vtkvmtkIO
+DEPENDS
+  VMTK::Common
+  VTK::CommonMisc
+  VTK::IOImage
+  VTK::IOLegacy
+  VTK::ImagingCore
+DESCRIPTION
+  "vtkvmtkIO"

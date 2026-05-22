@@ -1,0 +1,9 @@
+NAME
+  VMTK::Common
+LIBRARY_NAME
+  vtkvmtkCommon
+DEPENDS
+  VTK::CommonCore
+  VTK::WrappingPythonCore
+DESCRIPTION
+  "vtkvmtkCommon"
